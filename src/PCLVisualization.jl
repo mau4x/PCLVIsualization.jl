@@ -48,7 +48,7 @@ cxx"""
 
 include("const.jl")
 
-abstract PointCloudColorHandler
+abstract type PointCloudColorHandler end
 
 @defpcltype(PointCloudColorHandlerRGBField{T} <: PointCloudColorHandler,
     "pcl::visualization::PointCloudColorHandlerRGBField")
